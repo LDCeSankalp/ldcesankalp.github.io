@@ -1006,7 +1006,7 @@ function paintTicker(id, items){
 }
 function paintTickers(){
   paintTicker('gatetkr', TICK_PUBLIC);
-  paintTicker('apptkr', TICK_PERSONAL.length ? TICK_PERSONAL : TICK_PUBLIC);
+  paintTicker('apptkr', TICK_PERSONAL);   /* only notices meant for the app (show_on app/both) */
 }
 async function loadPublicNotices(){
   try{
